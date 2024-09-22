@@ -34,7 +34,6 @@ CKwHgApp::CKwHgApp()
 
 CKwHgApp theApp;
 
-
 // CKwHgApp √ ±‚»≠
 
 BOOL CKwHgApp::InitInstance()
