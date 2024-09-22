@@ -231,9 +231,6 @@
     <ClInclude Include="StkInfoDlg.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="SQLIte3\CppSQLite3.h">
-      <Filter>헤더 파일\SQLite3</Filter>
-    </ClInclude>
     <ClInclude Include="SQLIte3\DbManager.h">
       <Filter>헤더 파일\SQLite3</Filter>
     </ClInclude>
@@ -349,9 +346,6 @@
     </ClCompile>
     <ClCompile Include="TTFNameLibrary\TTF.cpp">
       <Filter>소스 파일\TTFNameLibrary</Filter>
-    </ClCompile>
-    <ClCompile Include="SQLIte3\CppSQLite3.cpp">
-      <Filter>소스 파일\SQLite3</Filter>
     </ClCompile>
     <ClCompile Include="SQLIte3\DbManager.cpp">
       <Filter>소스 파일\SQLite3</Filter>
