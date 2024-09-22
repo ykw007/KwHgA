@@ -1,0 +1,400 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{b585db23-8ce7-4a7b-805a-e72851567be7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\NewCellTypes">
+      <UniqueIdentifier>{009914fe-288a-4801-ba69-75b886f0064e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\NewCellTypes">
+      <UniqueIdentifier>{34673fd1-5165-43c4-97da-31fe523f84ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\IsiLcdLib">
+      <UniqueIdentifier>{9c5f1e47-5f7e-4405-8a1d-05f80043971c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\IsiLcdLib">
+      <UniqueIdentifier>{c69842a4-d909-4b69-907a-e69a22903fb4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\HtmlParser">
+      <UniqueIdentifier>{79bfdc98-cea2-42ec-8e15-c652c6b4dc3e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\HtmlParser">
+      <UniqueIdentifier>{3574801f-a4da-4d30-9305-7543551b0f5d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\TTFNameLibrary">
+      <UniqueIdentifier>{59b1f287-ea63-4361-a6a8-3ba074039d70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\TTFNameLibrary">
+      <UniqueIdentifier>{f87524bd-b1c2-40a6-8f17-7e46416c9ae1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\SQLite3">
+      <UniqueIdentifier>{864df41a-aa28-4ec1-9240-dba8e8bc4736}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\SQLite3">
+      <UniqueIdentifier>{d87b0dd9-42b7-47b9-b4e8-5ff5cd17d327}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\KwHg.rc2">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\KwHg.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\bitmap1.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\bitmap2.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="C:\Program Files\MySQL\MySQL Server 5.5\lib\libmysql.dll" />
+    <None Include="res\binary1.bin">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\binary2.bin">
+      <Filter>리소스 파일</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="KwHg.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="KwHgDlg.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CommDef.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartViewer.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\chartdir.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\FinanceChart.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\bchartdir.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\memblock.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="LogDlg.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="StockListDlg.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="GridCtrl.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="CellRange.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="GridCell.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="GridCellBase.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="GridDropTarget.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="InPlaceEdit.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="TitleTip.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="MemDC.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="KHOpenAPI.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="KHOpenAPICtrl.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="NewCellTypes\GridCellCheck.h">
+      <Filter>헤더 파일\NewCellTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="NewCellTypes\GridCellCombo.h">
+      <Filter>헤더 파일\NewCellTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="NewCellTypes\GridCellDateTime.h">
+      <Filter>헤더 파일\NewCellTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="NewCellTypes\GridCellNumeric.h">
+      <Filter>헤더 파일\NewCellTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="NewCellTypes\GridURLCell.h">
+      <Filter>헤더 파일\NewCellTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="NewCellTypes\GridCellButton.h">
+      <Filter>헤더 파일\NewCellTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="SplashScreenEx.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="RegConfSaveDlg.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="IsiLcdLib\COLOR.H">
+      <Filter>헤더 파일\IsiLcdLib</Filter>
+    </ClInclude>
+    <ClInclude Include="IsiLcdLib\GdiBorder.h">
+      <Filter>헤더 파일\IsiLcdLib</Filter>
+    </ClInclude>
+    <ClInclude Include="IsiLcdLib\GdiPlusWnd.h">
+      <Filter>헤더 파일\IsiLcdLib</Filter>
+    </ClInclude>
+    <ClInclude Include="IsiLcdLib\IsiCompBase.h">
+      <Filter>헤더 파일\IsiLcdLib</Filter>
+    </ClInclude>
+    <ClInclude Include="IsiLcdLib\IsiLcdDisplay.h">
+      <Filter>헤더 파일\IsiLcdLib</Filter>
+    </ClInclude>
+    <ClInclude Include="IsiLcdLib\MemDC.h">
+      <Filter>헤더 파일\IsiLcdLib</Filter>
+    </ClInclude>
+    <ClInclude Include="IsiLcdLib\RoundRect.h">
+      <Filter>헤더 파일\IsiLcdLib</Filter>
+    </ClInclude>
+    <ClInclude Include="QtListDlg.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="HtmlParser\DataKeeper.h">
+      <Filter>헤더 파일\HtmlParser</Filter>
+    </ClInclude>
+    <ClInclude Include="HtmlParser\HtmlElementCollection.h">
+      <Filter>헤더 파일\HtmlParser</Filter>
+    </ClInclude>
+    <ClInclude Include="HtmlParser\HtmlEventHandler.h">
+      <Filter>헤더 파일\HtmlParser</Filter>
+    </ClInclude>
+    <ClInclude Include="HtmlParser\LiteHTMLAttributes.h">
+      <Filter>헤더 파일\HtmlParser</Filter>
+    </ClInclude>
+    <ClInclude Include="HtmlParser\LiteHTMLCommon.h">
+      <Filter>헤더 파일\HtmlParser</Filter>
+    </ClInclude>
+    <ClInclude Include="HtmlParser\LiteHTMLEntityResolver.h">
+      <Filter>헤더 파일\HtmlParser</Filter>
+    </ClInclude>
+    <ClInclude Include="HtmlParser\LiteHTMLReader.h">
+      <Filter>헤더 파일\HtmlParser</Filter>
+    </ClInclude>
+    <ClInclude Include="HtmlParser\LiteHTMLTag.h">
+      <Filter>헤더 파일\HtmlParser</Filter>
+    </ClInclude>
+    <ClInclude Include="HtmlParser\Tree.h">
+      <Filter>헤더 파일\HtmlParser</Filter>
+    </ClInclude>
+    <ClInclude Include="HtmlParser\UTFConv.h">
+      <Filter>헤더 파일\HtmlParser</Filter>
+    </ClInclude>
+    <ClInclude Include="HtmlParser\WebGrab.h">
+      <Filter>헤더 파일\HtmlParser</Filter>
+    </ClInclude>
+    <ClInclude Include="TTFNameLibrary\EndianSwap.h">
+      <Filter>헤더 파일\TTFNameLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="TTFNameLibrary\MemPtrReader.h">
+      <Filter>헤더 파일\TTFNameLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="TTFNameLibrary\TTC.h">
+      <Filter>헤더 파일\TTFNameLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="TTFNameLibrary\TTF.h">
+      <Filter>헤더 파일\TTFNameLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="StkInfoDlg.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="SQLIte3\CppSQLite3.h">
+      <Filter>헤더 파일\SQLite3</Filter>
+    </ClInclude>
+    <ClInclude Include="SQLIte3\DbManager.h">
+      <Filter>헤더 파일\SQLite3</Filter>
+    </ClInclude>
+    <ClInclude Include="SQLIte3\framework.h">
+      <Filter>헤더 파일\SQLite3</Filter>
+    </ClInclude>
+    <ClInclude Include="SQLIte3\sqlite3.h">
+      <Filter>헤더 파일\SQLite3</Filter>
+    </ClInclude>
+    <ClInclude Include="SQLIte3\sqlite3ext.h">
+      <Filter>헤더 파일\SQLite3</Filter>
+    </ClInclude>
+    <ClInclude Include="SQLIte3\targetver.h">
+      <Filter>헤더 파일\SQLite3</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientSocket.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="KwHg.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartViewer.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="LogDlg.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="GridCtrl.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="GridCell.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="GridCellBase.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="GridDropTarget.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="InPlaceEdit.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="KHOpenAPI.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="KHOpenAPICtrl.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="NewCellTypes\GridCellCheck.cpp">
+      <Filter>소스 파일\NewCellTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="NewCellTypes\GridCellCombo.cpp">
+      <Filter>소스 파일\NewCellTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="NewCellTypes\GridCellDateTime.cpp">
+      <Filter>소스 파일\NewCellTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="NewCellTypes\GridCellNumeric.cpp">
+      <Filter>소스 파일\NewCellTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="NewCellTypes\GridURLCell.cpp">
+      <Filter>소스 파일\NewCellTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="NewCellTypes\GridCellButton.cpp">
+      <Filter>소스 파일\NewCellTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="SplashScreenEx.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="IsiLcdLib\COLOR.CPP">
+      <Filter>소스 파일\IsiLcdLib</Filter>
+    </ClCompile>
+    <ClCompile Include="IsiLcdLib\GdiBorder.cpp">
+      <Filter>소스 파일\IsiLcdLib</Filter>
+    </ClCompile>
+    <ClCompile Include="IsiLcdLib\IsiCompBase.cpp">
+      <Filter>소스 파일\IsiLcdLib</Filter>
+    </ClCompile>
+    <ClCompile Include="IsiLcdLib\IsiLcdDisplay.cpp">
+      <Filter>소스 파일\IsiLcdLib</Filter>
+    </ClCompile>
+    <ClCompile Include="HtmlParser\HtmlElementCollection.cpp">
+      <Filter>소스 파일\HtmlParser</Filter>
+    </ClCompile>
+    <ClCompile Include="HtmlParser\HtmlEventHandler.cpp">
+      <Filter>소스 파일\HtmlParser</Filter>
+    </ClCompile>
+    <ClCompile Include="HtmlParser\LiteHTMLAttributes.cpp">
+      <Filter>소스 파일\HtmlParser</Filter>
+    </ClCompile>
+    <ClCompile Include="HtmlParser\LiteHTMLEntityResolver.cpp">
+      <Filter>소스 파일\HtmlParser</Filter>
+    </ClCompile>
+    <ClCompile Include="HtmlParser\LiteHTMLReader.cpp">
+      <Filter>소스 파일\HtmlParser</Filter>
+    </ClCompile>
+    <ClCompile Include="HtmlParser\UTFConv.cpp">
+      <Filter>소스 파일\HtmlParser</Filter>
+    </ClCompile>
+    <ClCompile Include="HtmlParser\WebGrab.cpp">
+      <Filter>소스 파일\HtmlParser</Filter>
+    </ClCompile>
+    <ClCompile Include="TTFNameLibrary\EndianSwap.cpp">
+      <Filter>소스 파일\TTFNameLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="TTFNameLibrary\MemPtrReader.cpp">
+      <Filter>소스 파일\TTFNameLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="TTFNameLibrary\TTC.cpp">
+      <Filter>소스 파일\TTFNameLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="TTFNameLibrary\TTF.cpp">
+      <Filter>소스 파일\TTFNameLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="SQLIte3\CppSQLite3.cpp">
+      <Filter>소스 파일\SQLite3</Filter>
+    </ClCompile>
+    <ClCompile Include="SQLIte3\DbManager.cpp">
+      <Filter>소스 파일\SQLite3</Filter>
+    </ClCompile>
+    <ClCompile Include="ClientSocket.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="KwHg.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\bmp00001.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\icon2.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\icon1.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\icon3.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\hg.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\Earth.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\Danger.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="res\NanumGothic.ttf" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7600EE2C-B38F-4CD5-B640-70D5AAF635CA}</ProjectGuid>
+    <RootNamespace>KwHg</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+    <SccProjectName>SAK</SccProjectName>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccProvider>SAK</SccProvider>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>KwHg</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <LibraryPath>c:\dev\kw\KwHg\lib32;C:\Program Files\MySQL\MySQL Server 5.7\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <LibraryPath>$(SolutionDir)lib32;$(LibraryPath);$(SolutionDir)SQLiteLib</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>C:\Program Files\MySQL\MySQL Server 5.7\include;c:\dev\kw\KwHg\include</AdditionalIncludeDirectories>
+      <AdditionalOptions>-DHAVE_STRUCT_TIMESPEC %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>libmysql.lib;chartdir60.lib</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions);_AFXDLL</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>C:\Program Files\MySQL\MySQL Server 5.7\include;c:\dev\kw\KwHg\include</AdditionalIncludeDirectories>
+      <AdditionalOptions>-DHAVE_STRUCT_TIMESPEC %(AdditionalOptions)</AdditionalOptions>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>libmysql.lib;chartdir60.lib;sqlite3.lib;wininet.lib;Version.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <LargeAddressAware>
+      </LargeAddressAware>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="C:\Program Files\MySQL\MySQL Server 5.5\lib\libmysql.dll" />
+    <None Include="res\binary1.bin" />
+    <None Include="res\binary2.bin" />
+    <None Include="res\bitmap1.bmp" />
+    <None Include="res\bitmap2.bmp" />
+    <None Include="res\KwHg.ico" />
+    <None Include="res\KwHg.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\bchartdir.h" />
+    <ClInclude Include="..\..\include\chartdir.h" />
+    <ClInclude Include="..\..\include\CommDef.h" />
+    <ClInclude Include="..\..\include\FinanceChart.h" />
+    <ClInclude Include="..\..\include\memblock.h" />
+    <ClInclude Include="ClientSocket.h" />
+    <ClInclude Include="HtmlParser\DataKeeper.h" />
+    <ClInclude Include="HtmlParser\HtmlElementCollection.h" />
+    <ClInclude Include="HtmlParser\HtmlEventHandler.h" />
+    <ClInclude Include="HtmlParser\LiteHTMLAttributes.h" />
+    <ClInclude Include="HtmlParser\LiteHTMLCommon.h" />
+    <ClInclude Include="HtmlParser\LiteHTMLEntityResolver.h" />
+    <ClInclude Include="HtmlParser\LiteHTMLReader.h" />
+    <ClInclude Include="HtmlParser\LiteHTMLTag.h" />
+    <ClInclude Include="HtmlParser\Tree.h" />
+    <ClInclude Include="HtmlParser\UTFConv.h" />
+    <ClInclude Include="HtmlParser\WebGrab.h" />
+    <ClInclude Include="IsiLcdLib\COLOR.H" />
+    <ClInclude Include="IsiLcdLib\GdiBorder.h" />
+    <ClInclude Include="IsiLcdLib\GdiPlusWnd.h" />
+    <ClInclude Include="IsiLcdLib\IsiCompBase.h" />
+    <ClInclude Include="IsiLcdLib\IsiLcdDisplay.h" />
+    <ClInclude Include="IsiLcdLib\MemDC.h" />
+    <ClInclude Include="IsiLcdLib\RoundRect.h" />
+    <ClInclude Include="LogDlg.h" />
+    <ClInclude Include="CellRange.h" />
+    <ClInclude Include="ChartViewer.h" />
+    <ClInclude Include="QtListDlg.h" />
+    <ClInclude Include="RegConfSaveDlg.h" />
+    <ClInclude Include="SplashScreenEx.h" />
+    <ClInclude Include="SQLIte3\CppSQLite3.h" />
+    <ClInclude Include="SQLIte3\DbManager.h" />
+    <ClInclude Include="SQLIte3\framework.h" />
+    <ClInclude Include="SQLIte3\sqlite3.h" />
+    <ClInclude Include="SQLIte3\sqlite3ext.h" />
+    <ClInclude Include="SQLIte3\targetver.h" />
+    <ClInclude Include="StkInfoDlg.h" />
+    <ClInclude Include="StockListDlg.h" />
+    <ClInclude Include="GridCell.h" />
+    <ClInclude Include="GridCellBase.h" />
+    <ClInclude Include="GridCtrl.h" />
+    <ClInclude Include="GridDropTarget.h" />
+    <ClInclude Include="InPlaceEdit.h" />
+    <ClInclude Include="KHOpenAPI.h" />
+    <ClInclude Include="KHOpenAPICtrl.h" />
+    <ClInclude Include="MemDC.h" />
+    <ClInclude Include="NewCellTypes\GridCellButton.h" />
+    <ClInclude Include="NewCellTypes\GridCellCheck.h" />
+    <ClInclude Include="NewCellTypes\GridCellCombo.h" />
+    <ClInclude Include="NewCellTypes\GridCellDateTime.h" />
+    <ClInclude Include="NewCellTypes\GridCellNumeric.h" />
+    <ClInclude Include="NewCellTypes\GridURLCell.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="TitleTip.h" />
+    <ClInclude Include="KwHg.h" />
+    <ClInclude Include="KwHgDlg.h" />
+    <ClInclude Include="TTFNameLibrary\EndianSwap.h" />
+    <ClInclude Include="TTFNameLibrary\MemPtrReader.h" />
+    <ClInclude Include="TTFNameLibrary\TTC.h" />
+    <ClInclude Include="TTFNameLibrary\TTF.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ClientSocket.cpp" />
+    <ClCompile Include="HtmlParser\HtmlElementCollection.cpp" />
+    <ClCompile Include="HtmlParser\HtmlEventHandler.cpp" />
+    <ClCompile Include="HtmlParser\LiteHTMLAttributes.cpp" />
+    <ClCompile Include="HtmlParser\LiteHTMLEntityResolver.cpp" />
+    <ClCompile Include="HtmlParser\LiteHTMLReader.cpp" />
+    <ClCompile Include="HtmlParser\UTFConv.cpp" />
+    <ClCompile Include="HtmlParser\WebGrab.cpp" />
+    <ClCompile Include="IsiLcdLib\COLOR.CPP" />
+    <ClCompile Include="IsiLcdLib\GdiBorder.cpp" />
+    <ClCompile Include="IsiLcdLib\IsiCompBase.cpp" />
+    <ClCompile Include="IsiLcdLib\IsiLcdDisplay.cpp" />
+    <ClCompile Include="LogDlg.cpp" />
+    <ClCompile Include="ChartViewer.cpp" />
+    <ClCompile Include="SplashScreenEx.cpp" />
+    <ClCompile Include="SQLIte3\CppSQLite3.cpp" />
+    <ClCompile Include="SQLIte3\DbManager.cpp" />
+    <ClCompile Include="GridCell.cpp" />
+    <ClCompile Include="GridCellBase.cpp" />
+    <ClCompile Include="GridCtrl.cpp" />
+    <ClCompile Include="GridDropTarget.cpp" />
+    <ClCompile Include="InPlaceEdit.cpp" />
+    <ClCompile Include="KHOpenAPI.cpp" />
+    <ClCompile Include="KHOpenAPICtrl.cpp" />
+    <ClCompile Include="NewCellTypes\GridCellButton.cpp" />
+    <ClCompile Include="NewCellTypes\GridCellCheck.cpp" />
+    <ClCompile Include="NewCellTypes\GridCellCombo.cpp" />
+    <ClCompile Include="NewCellTypes\GridCellDateTime.cpp" />
+    <ClCompile Include="NewCellTypes\GridCellNumeric.cpp" />
+    <ClCompile Include="NewCellTypes\GridURLCell.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="KwHg.cpp" />
+    <ClCompile Include="TTFNameLibrary\EndianSwap.cpp" />
+    <ClCompile Include="TTFNameLibrary\MemPtrReader.cpp" />
+    <ClCompile Include="TTFNameLibrary\TTC.cpp" />
+    <ClCompile Include="TTFNameLibrary\TTF.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="KwHg.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\bmp00001.bmp" />
+    <Image Include="res\Danger.ico" />
+    <Image Include="res\Earth.ico" />
+    <Image Include="res\hg.ico" />
+    <Image Include="res\icon1.ico" />
+    <Image Include="res\icon2.ico" />
+    <Image Include="res\icon3.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="res\NanumGothic.ttf" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="KwHg.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
