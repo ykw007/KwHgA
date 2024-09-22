@@ -156,9 +156,6 @@
     <ClInclude Include="NewCellTypes\GridCellButton.h">
       <Filter>헤더 파일\NewCellTypes</Filter>
     </ClInclude>
-    <ClInclude Include="SplashScreenEx.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
     <ClInclude Include="RegConfSaveDlg.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
@@ -307,9 +304,6 @@
     </ClCompile>
     <ClCompile Include="NewCellTypes\GridCellButton.cpp">
       <Filter>소스 파일\NewCellTypes</Filter>
-    </ClCompile>
-    <ClCompile Include="SplashScreenEx.cpp">
-      <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="IsiLcdLib\COLOR.CPP">
       <Filter>소스 파일\IsiLcdLib</Filter>

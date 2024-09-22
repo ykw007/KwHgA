@@ -157,7 +157,6 @@
     <ClInclude Include="ChartViewer.h" />
     <ClInclude Include="QtListDlg.h" />
     <ClInclude Include="RegConfSaveDlg.h" />
-    <ClInclude Include="SplashScreenEx.h" />
     <ClInclude Include="SQLIte3\CppSQLite3.h" />
     <ClInclude Include="SQLIte3\DbManager.h" />
     <ClInclude Include="SQLIte3\framework.h" />
@@ -206,7 +205,6 @@
     <ClCompile Include="IsiLcdLib\IsiLcdDisplay.cpp" />
     <ClCompile Include="LogDlg.cpp" />
     <ClCompile Include="ChartViewer.cpp" />
-    <ClCompile Include="SplashScreenEx.cpp" />
     <ClCompile Include="SQLIte3\CppSQLite3.cpp" />
     <ClCompile Include="SQLIte3\DbManager.cpp" />
     <ClCompile Include="GridCell.cpp" />
